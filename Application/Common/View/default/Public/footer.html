@@ -1,0 +1,129 @@
+<!--<div style="display: none" class="footer-bar ">
+    <div class="container" style="position: relative">
+            <div class="col-xs-3 fot-box text-center">
+                <p class="p1 logo_1">
+
+                </p>
+                <p class="p2">
+                    文档中心
+                </p>
+                <p class="p3">
+                    完善的建站教程、二次开发手册及官方特制视频教程，让您使用OpenSNS更简便
+                </p>
+                <a href="http://os.opensns.cn/book" target="_blank">
+                <p class="p4">前往文档中心<i class="icon icon-double-angle-right"></i></p></a>
+            </div>
+            <div class="col-xs-3 fot-box text-center">
+                <p class="p1 logo_2">
+
+                </p>
+                <p class="p2">
+                    服务支持
+                </p>
+                <p class="p3">
+                    站长圈：319678540<br/>
+                    更多问题，商业客户请提交工单，独立技术服务团队，快速响应您的请求
+                </p>
+                <a href="https://jxxt.kf5.com/hc/" target="_blank">
+                <p class="p4">提交工单<i class="icon icon-double-angle-right"></i></p></a>
+            </div>
+            <div class="col-xs-3 fot-box text-center">
+                <p class="p1 logo_3">
+
+                </p>
+                <p class="p2">
+                    专属客户经理
+                </p>
+                <p class="p3">
+                    免费咨询，IM实时沟通，专人一对一贴心服务为您提供合适的解决方案，让您更轻松
+                </p>
+                <p class="p4">点击获取<i class="icon icon-double-angle-right"></i></p>
+            </div>
+            <div class="col-xs-3 fot-box text-center">
+                <p class="p1 logo_4">
+
+                </p>
+                <p class="p2">
+                    购买下载
+                </p>
+                <p class="p3">
+                    一次购买，终生授权，商业客户定制优先排期，绝无任何隐形销售，让您更安心
+                </p>
+                <a href="http://www.opensns.cn/" target="_blank">
+                <p class="p4">前往产品站<i class="icon icon-double-angle-right"></i></p></a>
+            </div>
+        <div class="btn-box text-center">
+            <a href="javascript:" class="add-more icon-angle-down" data-role="close_more"></a>
+        </div>
+    </div>
+</div>-->
+
+<div class="next-box">
+    <div class="container">
+        <!--<div class="row text-center" style="height: 22px">
+            <a href="javascript:" id="add_more" class="add-more icon-angle-up" data-role="add_more"></a>
+        </div>-->
+        <div class="row">
+            <div class="col-xs-4 about-us">
+                <p class="p-head">关于我们</p>
+                {:modC('ABOUT_US',L('_NOT_SET_NOW_'),'Config')}
+            </div>
+            <div class="col-xs-4 text-center">
+                <p style="margin-top: 5px">
+                    <img src="__PUBLIC__/images/code.png" alt="">
+                </p>
+            </div>
+            <div class="col-xs-2 friend">
+                <p class="p-head">友情链接</p>
+                {:W('Common/SuperLinks/superLinks')}
+            </div>
+            <div class="col-xs-2 comp">
+                <p class="p-head">公司</p>
+                <a href="#" target="_blank">
+                    <p><i class="icon icon-user"></i>加入我们</p>
+                </a>
+                <p><i class="icon icon-phone-sign"></i>xxx-xxxx-xxx</p>
+                <p><i class="icon icon-envelope-alt"></i>？@？.？</p>
+            </div>
+        </div>
+        <div class="row last-box text-center">
+            <p>
+                <span>{:modC('ICP',L('_NOT_SET_NOW_'),'Config')}</span>
+                <span>{:modC('COPY_RIGHT',L('_NOT_SET_NOW_'),'Config')}</span>
+            </p>
+            {$count_code}
+        </div>
+    </div>
+</div>
+
+<include file="Public/js"/>
+
+<block name="script"><!-- 用于加载js代码 --></block>
+<script>
+    $(document).ready(function () {
+        $('[data-role="add_more"]').click(function () {
+            $(".footer-bar").fadeToggle();
+            $("#add_more").hide();
+        });
+        $('[data-role="close_more"]').click(function () {
+            $(".footer-bar").fadeToggle();
+            $("#add_more").show("slow");
+        });
+    });
+</script>
+<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+{:hook('pageFooter', 'widget')}
+<!-- 调用全站公告部件-->
+{:W('Common/Announce/render')}
+
+<!-- 调用消息部件-->
+{:W('Common/Message/render')}
+<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+    {$count_code}
+    <block name="hidden"></block>
+</div>
+<script src="https://dn-bts.qbox.me/sdk/bugtags-1.0.3.js"></script>
+<script>
+    // VERSION_NAME 替换为项目的版本，VERSION_CODE 替换为项目的子版本
+    new Bugtags('d6023daa6c7467634636c87b3f16213e','8.12','VERSION_CODE');
+</script>
