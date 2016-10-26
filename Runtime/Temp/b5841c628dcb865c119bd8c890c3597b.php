@@ -1,0 +1,3 @@
+<?php
+//000000000600a:1:{i:0;a:2:{s:3:"uid";s:1:"1";s:4:"user";a:11:{s:8:"avatar32";s:38:"Public/images/default_avatar_32_32.jpg";s:8:"avatar64";s:38:"Public/images/default_avatar_64_64.jpg";s:9:"avatar128";s:40:"Public/images/default_avatar_128_128.jpg";s:9:"avatar256";s:40:"Public/images/default_avatar_256_256.jpg";s:9:"avatar512";s:40:"Public/images/default_avatar_512_512.jpg";s:9:"space_url";s:52:"/opensns/index.php?s=/ucenter/index/index/uid/1.html";s:10:"space_link";s:98:"<a ucard="1" target="_blank" href="/opensns/index.php?s=/ucenter/index/index/uid/1.html">admin</a>";s:13:"space_mob_url";s:47:"/opensns/index.php?s=/mob/user/index/uid/1.html";s:3:"uid";s:1:"1";s:8:"nickname";s:5:"admin";s:13:"real_nickname";s:5:"admin";}}}
+?>

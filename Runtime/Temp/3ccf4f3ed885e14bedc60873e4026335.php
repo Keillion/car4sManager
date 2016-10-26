@@ -1,0 +1,3 @@
+<?php
+//000000000000s:554:"[{"data-id":"disable","title":"禁用","items":[{"id":"Group","title":"群组","data-id":"Group"},{"id":"Shop","title":"积分商城","data-id":"Shop"},{"id":"Forum","title":"论坛","data-id":"Forum"},{"id":"People","title":"找人","data-id":"People"}]},{"data-id":"enable","title":"启用","items":[{"id":"slider","title":"轮播","data-id":"slider"},{"id":"News","title":"资讯","data-id":"News"},{"id":"Weibo","title":"动态","data-id":"Weibo"},{"id":"Event","title":"活动","data-id":"Event"},{"id":"Issue","title":"专辑","data-id":"Issue"}]}]";
+?>
